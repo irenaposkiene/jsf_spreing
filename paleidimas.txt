@@ -1,0 +1,4 @@
+Projektà galima surinkti naudojant komandà:
+	mvn clean package
+Projektà kaip web aplikacijà paleisti galima naudojant komandà:
+	mvn tomcat7:run-war

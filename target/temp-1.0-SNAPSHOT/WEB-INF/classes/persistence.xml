@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+   <persistence-unit name="persistence-unit">
+   <class>lt.vtvpmc.entities.Student</class>
+       <class>lt.vtvpmc.entities.Client</class>
+       <properties>
+           <property name="hibernate.hbm2ddl.auto" value="update"/>
+       </properties>
+   </persistence-unit>
+</persistence>          
