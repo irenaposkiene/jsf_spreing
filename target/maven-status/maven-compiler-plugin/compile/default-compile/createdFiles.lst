@@ -1,6 +1,9 @@
 lt\vtvpmc\entities\Client.class
+lt\vtvpmc\ui\FakturList.class
 lt\vtvpmc\entities\Student.class
 lt\vtvpmc\ui\NewClientBean.class
+lt\vtvpmc\entities\Fakturos.class
 lt\vtvpmc\ui\ClientListBean.class
+lt\vtvpmc\ui\NewFakturBean.class
 lt\vtvpmc\ui\CrudList.class
 lt\vtvpmc\ui\NewCrudStudent.class

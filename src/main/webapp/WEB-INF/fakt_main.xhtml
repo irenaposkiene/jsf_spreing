@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Invoice List</title>
+	<h:outputStylesheet name="styles.css" />
+</h:head>
+<h:body>
+	<h:form id="tableActionForm">
+		<p:dataTable value="#{fakturList.fakturList}" var="invoice">
+			<p:column>
+				<f:facet name="header">
+                        Faktura
+                    </f:facet>
+				<h:outputText value="#{fakturos.numeris}" />
+			</p:column>
+			<p:column>
+				<f:facet name="header">
+                        Data
+                    </f:facet>
+				<h:outputText value="#{fakturos.date}" />
+			</p:column>
+			<p:column>
+				<f:facet name="header">
+                        Imone
+                    </f:facet>
+				<h:outputText value="#{fakturos.company}" />
+			</p:column>
+			<p:column>
+				<f:facet name="header">
+                        Klientas
+                    </f:facet>
+				<h:outputText value="#{fakturos.client}" />
+			</p:column>
+			<p:column>
+				<f:facet name="header">
+                        Actions
+                 </f:facet>
+				<p:commandLink
+					actionListener="#{fakturList.removeFakturos(fakturos)}"
+					value="Delete" ajax="none" />
+				<p:commandLink  value="Edit" ajax="none" />
+			</p:column>
+		</p:dataTable>
+		<p:commandButton id="backToMain" value="Back to main" action="main"
+			ajax="false" />
+	</h:form>
+</h:body>
+</html>

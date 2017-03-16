@@ -3,6 +3,7 @@
    <persistence-unit name="persistence-unit">
    <class>lt.vtvpmc.entities.Student</class>
        <class>lt.vtvpmc.entities.Client</class>
+       <class>lt.vtvpmc.entities.Fakturos</class>
        <properties>
            <property name="hibernate.hbm2ddl.auto" value="update"/>
        </properties>

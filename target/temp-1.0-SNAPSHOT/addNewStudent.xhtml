@@ -18,9 +18,9 @@
                 <h:inputText id="studentSurname" value="#{newCrudStudent.studentLastName}" required="true"/>
                 <h:message for="studentSurname"/>
                 
-                <h:outputText value="Phone #:"/>
-                <h:inputText id="studentPhoneNo" value="#{newCrudStudent.studentOperations}" required="true"/>
-                <h:message for="studentPhoneNo"/>
+                <h:outputText value="Operations:"/>
+                <h:inputText id="studentOper" value="#{newCrudStudent.studentOperations}" required="true"/>
+                <h:message for="studentOper"/>
             </h:panelGrid>
             <h:commandButton action="#{newCrudStudent.save()}" value="Add"/>
         </h:form>

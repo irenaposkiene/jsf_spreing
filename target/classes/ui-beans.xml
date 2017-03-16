@@ -19,4 +19,13 @@
     
     <bean id="crudList" class="lt.vtvpmc.ui.CrudList" scope="request"/>
     
+    
+    
+    <bean id="newFakturBean" class="lt.vtvpmc.ui.NewFakturBean" scope="request"/>
+    
+    <bean id="fakturList" class="lt.vtvpmc.ui.FakturList" scope="request"/>
+   
+   
+   
+    
 </beans>
